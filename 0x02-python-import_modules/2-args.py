@@ -1,18 +1,14 @@
 #!/usr/bin/python3
 def arg_printer(argv):
-    cnt = len(argv) - 1
+    cnt = len(sys.argv) - 1
     if cnt == 0:
-        print("{:d} argument.".format(cnt))
-        return
+        print("0 arguments.")
+    elif cnt == 1:
+        print("1 argument:")
     else:
-        if cnt == 1:
-            print("{:d} argument:".format(cnt))
-        else:
-            print("{:d} argument:".format(cnt))
-        i = 1
-        while i <= cnt:
-            print("{:d}: {:s}".format(i, argv[i]))
-            i += 1
+        print("{} arguments:".format(cnt))
+    for index in range(cnt):
+        print("{}: {}".format(index + 1, sys.argv[index + 1]))
 
 if __name__ == "__main__":
     import sys
