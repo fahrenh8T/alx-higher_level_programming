@@ -9,7 +9,6 @@ def arg_printer(argv):
             print("{:d} argument:".format(cnt))
         else:
             print("{:d} argument:".format(cnt))
-        
         i = 1
         while i <= cnt:
             print("{:d}: {:s}".format(i, argv[i]))
