@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+import sys
+
 def arg_printer(argv):
     cnt = len(sys.argv) - 1
     if cnt == 0:
@@ -10,6 +12,5 @@ def arg_printer(argv):
     for index in range(cnt):
         print("{}: {}".format(index + 1, sys.argv[index + 1]))
 
-    if __name__ == "__main__":
-        import sys
-        arg_printer(sys.argv)
+if __name__ == "__main__":
+    arg_printer(sys.argv)
