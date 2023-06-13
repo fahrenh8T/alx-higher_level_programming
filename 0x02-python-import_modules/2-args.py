@@ -10,6 +10,6 @@ def arg_printer(argv):
     for index in range(cnt):
         print("{}: {}".format(index + 1, sys.argv[index + 1]))
 
-if __name__ == "__main__":
-    import sys
-    arg_printer(sys.argv)
+    if __name__ == "__main__":
+        import sys
+        arg_printer(sys.argv)
