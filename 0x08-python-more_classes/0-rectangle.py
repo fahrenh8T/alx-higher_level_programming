@@ -3,5 +3,5 @@
 
 
 class Rectangle:
-    '''creates an empty Rectangle object'''
+    '''class: creates an empty Rectangle object'''
     pass
