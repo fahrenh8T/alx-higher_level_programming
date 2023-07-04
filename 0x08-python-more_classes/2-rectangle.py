@@ -4,7 +4,8 @@
 
 
 class Rectangle:
-    '''class: represents a rectangle.'''
+    '''class: represents a rectangle.
+    '''
     def __init__(self, width=0, height=0):
         '''method: __init__
         initializes an instance of the Rectangle class.
@@ -60,15 +61,13 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = height
 
-    """
-    calculate the area of the Rectangle.
-    """
+    '''method: calculate the area of the Rectangle.
+    '''
     def area(self):
         return self.__height * self.__width
 
-    """
-    calculate the perimeter of the Rectangle.
-    """
+    '''method: calculate the perimeter of the Rectangle.
+    '''
     def perimeter(self):
         if self.__height == 0 or self.width == 0:
             return 0
