@@ -7,7 +7,6 @@ contains the class Rectangle ...
 
 class Rectangle:
     '''class: Rectangle
-    this is Rectangle class
     '''
 
     number_of_instances = 0

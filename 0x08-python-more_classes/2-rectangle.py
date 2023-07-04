@@ -5,7 +5,7 @@ defines a Rectangle class.
 
 
 class Rectangle:
-    '''class: represents a rectangle.
+    '''class: Rectangle.
     '''
     def __init__(self, width=0, height=0):
         '''method: __init__

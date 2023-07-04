@@ -6,7 +6,6 @@ contains the Rectangle class
 
 class Rectangle:
     '''class: Rectangle
-    an empty class, further additions will be made in subsequent assignments.
     '''
 
     number_of_instances = 0
