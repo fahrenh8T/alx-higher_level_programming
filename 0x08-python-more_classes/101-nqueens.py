@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''module: 9-queens
-This module solves the N-queens puzzle.
-Determines all possible solutions to placing N
+solves the N-queens puzzle.
+determines all possible solutions to placing N
 non-attacking queens on an NxN chessboard.
 '''
 
@@ -10,7 +10,7 @@ import sys
 
 def init_board(n):
     '''method: init_board
-    Initialize an `n`x`n` sized chessboard with 0's'''
+    initialize an `n`x`n` sized chessboard with 0's'''
     board = []
     [board.append([]) for i in range(n)]
     [row.append(' ') for i in range(n) for row in board]
@@ -32,9 +32,9 @@ def get_solution(board):
     '''
     solution = []
     for r in range(len(board)):
-        for c in range(len(board)):
-            if board[r][c] == "Q":
-                solution.append([r, c])
+        for w in range(len(board)):
+            if board[r][w] == "Q":
+                solution.append([r, w])
                 break
     return (solution)
 
@@ -49,38 +49,38 @@ def xout(board, row, col):
         row (int): The row where a queen was last played.
         col (int): The column where a queen was last played.
     '''
-    for c in range(col + 1, len(board)):
-        board[row][c] = "x"
-    for c in range(col - 1, -1, -1):
-        board[row][c] = "x"
+    for w in range(col + 1, len(board)):
+        board[row][w] = "x"
+    for w in range(col - 1, -1, -1):
+        board[row][w] = "x"
     for r in range(row + 1, len(board)):
         board[r][col] = "x"
     for r in range(row - 1, -1, -1):
         board[r][col] = "x"
-    c = col + 1
+    w = col + 1
     for r in range(row + 1, len(board)):
-        if c >= len(board):
+        if w >= len(board):
             break
-        board[r][c] = "x"
-        c += 1
-    c = col - 1
+        board[r][w] = "x"
+        w += 1
+    w = col - 1
     for r in range(row - 1, -1, -1):
-        if c < 0:
+        if w < 0:
             break
-        board[r][c]
-        c -= 1
-    c = col + 1
+        board[r][w]
+        w -= 1
+    w = col + 1
     for r in range(row - 1, -1, -1):
-        if c >= len(board):
+        if w >= len(board):
             break
-        board[r][c] = "x"
-        c += 1
-    c = col - 1
+        board[r][w] = "x"
+        w += 1
+    w = col - 1
     for r in range(row + 1, len(board)):
-        if c < 0:
+        if w < 0:
             break
-        board[r][c] = "x"
-        c -= 1
+        board[r][w] = "x"
+        w -= 1
 
 
 def recursive_solve(board, row, queens, solutions):
@@ -96,11 +96,11 @@ def recursive_solve(board, row, queens, solutions):
         solutions.append(get_solution(board))
         return (solutions)
 
-    for c in range(len(board)):
-        if board[row][c] == " ":
+    for w in range(len(board)):
+        if board[row][w] == " ":
             tmp_board = board_deepcopy(board)
-            tmp_board[row][c] = "Q"
-            xout(tmp_board, row, c)
+            tmp_board[row][w] = "Q"
+            xout(tmp_board, row, w)
             solutions = recursive_solve(tmp_board, row + 1,
                                         queens + 1, solutions)
 
