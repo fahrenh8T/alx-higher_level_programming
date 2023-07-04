@@ -24,7 +24,8 @@ class Rectangle:
     def width(self):
         '''method: width getter
         '''
-        if (not isinstance(self.__width, int)) or isinstance(self.__width, bool):
+        if ((not isinstance(self.__width, int))
+                or isinstance(self.__width, bool)):
             raise TypeError("width must be an integer")
         if self.__width < 0:
             raise ValueError("width must be >= 0")
@@ -34,7 +35,8 @@ class Rectangle:
     def width(self, width):
         '''method: width setter
         '''
-        if not isinstance(self.__width, int) or isinstance(self.__width, bool):
+        if (not isinstance(self.__width, int)
+                or isinstance(self.__width, bool)):
             raise TypeError("width must be an integer")
         if self.__width < 0:
             raise ValueError("width must be >= 0")
@@ -44,7 +46,8 @@ class Rectangle:
     def height(self):
         '''method: height getter
         '''
-        if (not isinstance(self.__height, int)) or isinstance(self.__height, bool):
+        if ((not isinstance(self.__height, int))
+                or isinstance(self.__height, bool)):
             raise TypeError("height must be an integer")
         if self.__height < 0:
             raise ValueError("height must be >= 0")
@@ -54,7 +57,8 @@ class Rectangle:
     def height(self, height):
         '''method: height setter
         '''
-        if not isinstance(self.__height, int) or isinstance(self.__height, bool):
+        if (not isinstance(self.__height, int)
+                or isinstance(self.__height, bool)):
             raise TypeError("height must be an integer")
         if self.__height < 0:
             raise ValueError("height must be >= 0")
@@ -89,7 +93,8 @@ class Rectangle:
 
     def __repr__(self):
         '''method: __repr__
-        Return a representation of the rectangle that can be used by eval() to create a new object.
+        Return a representation of the rectangle
+        that can be used by eval() to create a new object.
         '''
         ret_str = "Rectangle(" + str(self.__width) + ","
         ret_str += str(self.__height) + ")"
