@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
 '''module: 5-rectangle
-This module contains the Rectangle class...
+contains the Rectangle class...
 '''
 
 
 class Rectangle:
     '''class: Rectangle
-    This is an empty class, further additions in subsequent assignments.
+    an empty class, further additions in subsequent assignments.
     '''
 
     def __init__(self, width=0, height=0):
