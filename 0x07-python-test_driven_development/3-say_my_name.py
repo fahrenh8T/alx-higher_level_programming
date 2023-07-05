@@ -5,7 +5,7 @@ contains a function that prints a name
 
 
 def say_my_name(first_name, last_name=""):
-    '''method: say_my_name
+    '''function: say_my_name
     function prints name (<first name> <last name>)
     Args:
         first_name (str): The fisrt name to be printed

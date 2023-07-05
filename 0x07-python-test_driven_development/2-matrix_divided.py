@@ -5,7 +5,7 @@ defines a matrix division function
 
 
 def matrix_divided(matrix, div):
-    '''method: matix_divided
+    '''function: matix_divided
     function divides all elements of a matrix by a given number
     Args:
         matrix: A list of lists (matrix)- members can be of type ints or floats

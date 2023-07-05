@@ -5,7 +5,7 @@ defines an integer addition function
 
 
 def add_integer(a, b=98):
-    '''method: add_integer
+    '''function: add_integer
     return the integer addition of a and b.
     Float arguments are typecasted to ints before addition is performed
     '''
