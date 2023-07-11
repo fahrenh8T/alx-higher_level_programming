@@ -5,11 +5,11 @@
 
 class BaseGeometry:
     '''class: BaseGeometry
-    base class representing geometric entities
+        base class representing geometric entities
     '''
 
     def area(self):
         '''function:
-    calculate the area of the geometric entity
+        calculate the area of the geometric entity
         '''
         raise Exception("area() is not implemented")

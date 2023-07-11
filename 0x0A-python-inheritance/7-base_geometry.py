@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 '''module: 7-base_geometry
-defines a base geometry class BaseGeometry
-with area calculation and integer validation methods.
+    defines a base geometry class BaseGeometry
+    with area calculation and integer validation methods.
 '''
 
 
 class BaseGeometry:
     '''class: BaseGeometry
-    representing geometric entities
+        representing geometric entities
     '''
 
     def area(self):
         '''function: area
-        calculate the area of the geometric entity
+            calculate the area of the geometric entity
         '''
         raise Exception("area() is not implemented")
 
