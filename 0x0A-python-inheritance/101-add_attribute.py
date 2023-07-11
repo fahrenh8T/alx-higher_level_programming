@@ -3,7 +3,7 @@
 '''
 
 
-def add_attribute(obj, att, value):
+def add_attribute(objt, attri, value):
     '''function: add_attribute
         add a new attribute to an object if possible
         Args:
@@ -14,6 +14,7 @@ def add_attribute(obj, att, value):
         Raises:
             TypeError: If the attribute cannot be added to the object
     '''
-    if not hasattr(obj, "__dict__"):
+    if not hasattr(objt, "__dict__"):
         raise TypeError("Cannot add new attribute")
-    setattr(obj, att, value)
+    if (not hasattr(objt, attri)):
+        objt.__setattr__(attri, value)
