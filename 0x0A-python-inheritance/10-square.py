@@ -10,11 +10,12 @@ class Square(Rectangle):
     '''class: Square
         represents a square object
     '''
+    
     def __init__(self, size):
         '''function: __init__
         initialize a Square instance.
         Args:
-        size (int): The size of the square.
+            size (int): The size of the square.
         '''
         self.__size = size
         super().__init__(self.__size, self.__size)
