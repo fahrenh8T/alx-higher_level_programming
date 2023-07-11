@@ -9,6 +9,7 @@ class MyList(list):
     '''
 
     def print_sorted(self):
-        '''prints the elements of the list in sorted order
+        '''function: print_sorted
+        prints the elements of the list in sorted order
         '''
         print(sorted(self))
