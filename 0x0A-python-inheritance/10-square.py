@@ -5,6 +5,8 @@
 
 
 Rectangle = __import__('9-rectangle').Rectangle
+'''square class
+'''
 
 
 class Square(Rectangle):
