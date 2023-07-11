@@ -3,6 +3,7 @@
     contains the definition of a Square class derived from the Rectangle class.
 '''
 
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 
