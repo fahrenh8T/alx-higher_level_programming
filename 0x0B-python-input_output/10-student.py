@@ -3,6 +3,7 @@
     defines a class Student
 '''
 
+
 class Student:
     '''class: Student
         Represent a student.
@@ -26,7 +27,8 @@ class Student:
             included in the list.
 
             Args:
-                attrs (list): List of attribute names (strings) to include in the dictionary representation.
+                attrs (list): List of attribute names (strings)
+                to include in the dictionary representation.
         '''
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
