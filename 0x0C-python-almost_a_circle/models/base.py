@@ -45,7 +45,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        '''function: save_to_file 
+        '''function: save_to_file
             Writes the string representation of objects
             to a file in JSON format
         '''
@@ -86,7 +86,10 @@ class Base:
         try:
             with open(file_name, encoding="UTF8") as fd:
                 content = cls.from_json_string(fd.read())
-        except:
+        except FileNotFoundError:
+            return []
+        except Exception as e:
+            print(f"Error while loading from file: {e}")
             return []
 
         instances = []
