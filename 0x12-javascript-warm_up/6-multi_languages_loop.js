@@ -1,5 +1,6 @@
 #!/usr/bin/node
-const linesup = ['C is fun', 'Pthon is cool', 'JavaScript is amazing'];
-for (const line in linesup) {
-  console.log(linesup[line]);
+const lineup = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+
+for (let i = 0, len = lineup.length; i < len; i++) {
+  console.log(lineup[i]);
 }
