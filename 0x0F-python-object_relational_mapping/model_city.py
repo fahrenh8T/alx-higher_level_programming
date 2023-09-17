@@ -8,7 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 class City(Base):
     """ represents a city database.
-        
+
         attributes:
             id (str): The city's id.
             name (sqlalchemy.Integer): The city's name.
