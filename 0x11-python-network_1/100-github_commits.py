@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ lists the 10 most recent commits on a given GitHub repository
-    
+
     usage: ./100-github_commits.py <repository name> <repository owner>
     backend prep
 """
