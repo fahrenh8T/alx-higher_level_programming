@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" script takes in a URL, sends a request 
+""" script takes in a URL, sends a request
     displays the value=X-Request-Id variable
 - found in the header of the response
 """
