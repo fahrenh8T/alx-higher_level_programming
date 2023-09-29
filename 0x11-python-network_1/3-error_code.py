@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ script takes in a URL, sends a request to the URL
-    displays the body of the response (decoded in utf-8).
+    displays the body of the response (decoded in utf-8)
+
+    usage: ./3-error_code.py <url>
 """
 
 

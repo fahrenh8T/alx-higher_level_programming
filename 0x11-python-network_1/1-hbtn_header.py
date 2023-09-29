@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """ script takes in a URL, sends a request
     displays the value=X-Request-Id variable
-- found in the header of the response
+    - found in the header of the response
+
+    usage: ./1-hbtn_header.py <url>
 """
 import sys
 import urllib.request

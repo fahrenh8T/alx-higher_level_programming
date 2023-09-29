@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ script takes in a URL, sends a POST request to the passed URL
     takes email as a parameter displays the body of the response
+
+    usage: ./2-post_email.py <url><email>
 """
 import sys
 import urllib.parse

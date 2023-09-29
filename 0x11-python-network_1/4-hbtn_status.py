@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" fetches https://alx-intranet.hbtn.io/status 
+""" fetches https://alx-intranet.hbtn.io/status
+
+    usage: ./4-hbtn_status.py | cat -e
 """
 import requests
 

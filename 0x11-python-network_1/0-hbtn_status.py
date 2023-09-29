@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-""" script fetches https://alx-intranet.hbtn.io/status.
-- usage urlib package
+""" script fetches https://alx-intranet.hbtn.io/status
+
+    usage: ./0-hbtn_status.py | cat -e
 """
 import urllib.request
 
